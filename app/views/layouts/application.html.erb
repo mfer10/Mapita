@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mapa</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+
+<link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded' rel='stylesheet' type='text/css'>
+
+<title>Mapa</title>
+ <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
+<style>
+
+	body 
+	{
+    	font-family: 'Stint Ultra Expanded', cursive;
+    	font-size: 22px;
+	}
+    </style>
+
 </head>
 <body>
 
-<%= yield %>
+<div class = "container"><%= yield %></div>
 
 </body>
 </html>
